@@ -1,0 +1,193 @@
+- type: entity
+  name: Packing Bandage
+  description: A bundle of gauze for application on deep wounds.
+  parent: BaseHealingItem
+  id: PackingBandage
+  suffix: Full
+  components:
+  - type: Tag
+    tags:
+    - Brutepack
+  - type: Sprite
+    state: brutepack
+  - type: Item
+    heldPrefix: brutepack
+  - type: Healing
+    damageContainers:
+      - Biological
+    damage:
+      types:
+        Piercing: -5
+        Slash: -5
+    bloodlossModifier: -5
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+  - type: Stack
+    stackType: PackingBandage
+    count: 10
+  - type: StackPrice
+    price: 5
+
+- type: entity
+  id: PackingBandage1
+  parent: PackingBandage
+  suffix: Single
+  components:
+  - type: Stack
+    stackType: PackingBandage
+    count: 1
+
+- type: entity
+  name: Elastic Bandage
+  description: A set of stretchy bandages for treatment of bruises and sprains.
+  parent: BaseHealingItem
+  id: ElasticBandage
+  suffix: Full
+  components:
+  - type: Tag
+    tags:
+    - Brutepack
+  - type: Sprite
+    state: brutepack
+  - type: Item
+    heldPrefix: brutepack
+  - type: Healing
+    damageContainers:
+      - Biological
+    damage:
+      types:
+        Blunt: -5
+        Slash: -5
+    bloodlossModifier: -5
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+  - type: Stack
+    stackType: ElasticBandage
+    count: 10
+  - type: StackPrice
+    price: 5
+
+- type: entity
+  id: ElasticBandage1
+  parent: ElasticBandage
+  suffix: Single
+  components:
+  - type: Stack
+    stackType: ElasticBandage
+    count: 1
+
+- type: entity
+  name: First-Aid Dressing
+  description: A collection of larger bandages meant to initially dress and stop bleeding.
+  parent: BaseHealingItem
+  id: FieldDressing
+  suffix: Full
+  components:
+  - type: Tag
+    tags:
+    - Brutepack
+  - type: Sprite
+    state: brutepack
+  - type: Item
+    heldPrefix: brutepack
+  - type: Healing
+    damageContainers:
+      - Biological
+    damage:
+      types:
+        Slash: -5
+        Piercing: -2
+      bloodlossModifier: -5
+
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+  - type: Stack
+    stackType: FieldDressing
+    count: 10
+  - type: StackPrice
+    price: 5
+
+- type: entity
+  id: FieldDressing1
+  parent: FieldDressing
+  suffix: Single
+  components:
+  - type: Stack
+    stackType: FieldDressing
+    count: 1
+
+
+- type: entity
+  name: Hemeostatic Dressing
+  description: A bandage with a clotting agent, meant to quickly start the clotting process.
+  parent: BaseHealingItem
+  id: HemeostaticDressing
+  suffix: Full
+  components:
+  - type: Tag
+    tags:
+    - Brutepack
+  - type: Sprite
+    state: brutepack
+  - type: Item
+    size: Tiny
+    heldPrefix: brutepack
+  - type: Healing
+    damageContainers:
+      - Biological
+    damage:
+      types:
+        Slash: -10
+        Piercing: -10
+    bloodlossModifier: -8
+
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+  - type: Stack
+    stackType: HemeostaticDressing
+    count: 10
+  - type: StackPrice
+    price: 5
+
+- type: entity
+  id: HemeostaticDressing1
+  parent: HemeostaticDressing
+  suffix: Single
+  components:
+  - type: Stack
+    stackType: HemeostaticDressing
+    count: 1
+
+

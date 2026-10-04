@@ -1,0 +1,34 @@
+# Topical medicines
+
+- type: stack
+  parent: BaseSmallStack
+  id: PackingBandage
+  name: stack-packingbandage
+  icon: { sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: gauze }
+  spawn: PackingBandage
+
+
+- type: stack
+  parent: BaseSmallStack
+  id: ElasticBandage
+  name: stack-elasticbandage
+  icon: { sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: gauze }
+  spawn: ElasticBandage
+
+
+- type: stack
+  parent: BaseSmallStack
+  id: FieldDressing
+  name: stack-fielddressing
+  icon: { sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: gauze }
+  spawn: FieldDressing
+
+
+- type: stack
+  parent: BaseSmallStack
+  id: HemeostaticDressing
+  name: stack-hemeostaticdressing
+  icon: { sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: gauze }
+  spawn: HemeostaticDressing
+
+

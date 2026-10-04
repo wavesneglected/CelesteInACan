@@ -196,6 +196,8 @@
   - type: Fiber
     fiberMaterial: fibers-nitrile
   - type: FingerprintMask
+  - type: Item
+    size: Tiny     # SIAC Change - "Splitmed"
 
 - type: entity
   parent: ClothingHandsButcherable

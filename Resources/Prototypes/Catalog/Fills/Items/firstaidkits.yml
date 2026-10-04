@@ -8,10 +8,11 @@
     containers:
       storagebase: !type:AllSelector
         children:
-        - id: Brutepack
-        - id: Ointment
-        - id: Gauze
-        - id: PillCanisterTricordrazine
+        - id: FieldDressing       #SIAC-edit - "splitmed"
+        - id: PackingBandage      #SIAC-edit - "splitmed"
+        - id: ElasticBandage      #SIAC-edit - "splitmed"
+        - id: HemeostaticDressing1 #SIAC-edit - "splitmed"
+        - id: ClothingHandsGlovesNitrile  #SIAC-edit - "splitmed"
       # see https://github.com/tgstation/blob/master/code/game/objects/items/storage/firstaid.dm for example contents
 
 - type: entity
